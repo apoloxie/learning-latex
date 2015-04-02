@@ -18,6 +18,8 @@
 % Uncomment the next line to use the natbib package with bibtex
 \usepackage{natbib}
 
+\usepackage{xcolor}
+
 % Uncomment the next line to use the harvard package with bibtex
 %\usepackage[abbr]{harvard}
 
@@ -39,6 +41,11 @@ Pittsburgh, PA, apoloxie@gmail.com.}}
 \JEL{lol}
 \Keywords{Labor Economics, Economics of Education, Higher Education}
 
+\renewcommand{\eqref}[1]{\textup{{\normalfont(\ref{#1}}\normalfont)}}
+\newcommand{\kai}[1]{{\color{red} KAI: #1}}
+\newcommand{\wolf}[1]{{\color{green} WOLF: #1}}
+
+
 \input{abstract}
 
 \maketitle
@@ -48,6 +55,7 @@ Pittsburgh, PA, apoloxie@gmail.com.}}
 \input{datasource}
 \input{analysis}
 \input{conclusion}
+\input{function}
 
 % Remove or comment out the next two lines if you are not using bibtex.
 \bibliographystyle{aea}
