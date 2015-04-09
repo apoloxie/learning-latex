@@ -17,18 +17,30 @@ Figure notes with optional leadin (Source, in this case).
 
 Sample table:
 
-\begin{table}
-\caption{Caption for table above.}
+\begin{table}[t]
+  \caption{Caption for table above.}
 
-\begin{tabular}{lll}
-& Heading 1 & Heading 2 \\
-Row 1 & 1 & 2 \\
-Row 2 & 3 & 4%
-\end{tabular}
-\begin{tablenotes}
-Table notes environment without optional leadin.
-\end{tablenotes}
-\begin{tablenotes}[Source]
-Table notes environment with optional leadin (Source, in this case).
-\end{tablenotes}
+  \begin{tabular}{| c | l | c |}
+    \hline
+    \textbf{PSD CODE} & \textbf{TAX ENTITY NAME} & \textbf{TAX RATE} \\
+    \hline
+    730601 & CLAIRTON CITY & 1.50\% \\
+    \hline
+    730301 & CORAOPOLIS BORO & 1.00\% \\
+    \hline
+    lfaminc  & -.1719479 & .0687396 \\\hline
+    motheduc & -.1497589 & .0225634 \\\hline
+    white    & .2323285  & .137875  \\\hline
+    \_cons     & 1.133026  & .2990124 \\\hline
+ 
+  \end{tabular}
+
+  \begin{tablenotes}
+    Table notes environment without optional leadin.
+  \end{tablenotes}
+
+  \begin{tablenotes}[Source]
+    Table notes environment with optional leadin (Source, in this case).
+  \end{tablenotes}
+
 \end{table}
